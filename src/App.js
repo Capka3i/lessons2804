@@ -2,6 +2,9 @@ import './App.css';
 import ModulMath from './moduls/modulMath';
 import {useState} from 'react';
 
+
+//Всім, привіт, додатково до дз зробіть по counter кнопки - increment, decrement, reset(тобто коли натискаєте на
+// кнопко то counter = 0), а також кнопки increment + 100, decrement - 100
 function App() {
 	let [acc, setAcc] = useState(0);
 	let incrs100 = ()=> setAcc(acc + 100)
