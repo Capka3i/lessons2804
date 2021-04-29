@@ -17,6 +17,7 @@ function App() {
 			<br/>
 			<button onClick={incrs100}>100</button>
 			<button onClick={incrs1}>1</button>
+
 			<button onClick={incrs0}>0</button>
 			<button onClick={incrs_1}>-1</button>
 			<button onClick={incrs_100}>-100</button>
