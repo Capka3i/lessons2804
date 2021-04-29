@@ -1,0 +1,2 @@
+Всім, привіт, додатково до дз зробіть по counter кнопки - increment, decrement, reset(тобто коли натискаєте на
+кнопко то counter = 0), а також кнопки increment + 100, decrement - 100

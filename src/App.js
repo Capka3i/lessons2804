@@ -1,25 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import ModulMath from './moduls/modulMath';
+import {useState} from 'react';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	let [acc, setAcc] = useState(0);
+	let incrs100 = ()=> setAcc(acc + 100)
+	let incrs1 = ()=> setAcc(acc + 1)
+	let incrs0 = ()=> setAcc(acc = 0)
+	let incrs_1 = ()=> setAcc(acc - 1)
+	let incrs_100 = ()=> setAcc(acc - 100)
+
+
+	return (
+		<div>
+			<p className={'pesky'}>{acc}</p>
+			<br/>
+			<button onClick={incrs100}>100</button>
+			<button onClick={incrs1}>1</button>
+			<button onClick={incrs0}>0</button>
+			<button onClick={incrs_1}>-1</button>
+			<button onClick={incrs_100}>-100</button>
+		</div>
+	);
 }
 
 export default App;
